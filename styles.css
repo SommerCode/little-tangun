@@ -17,13 +17,14 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 3%;
+    padding: 5px 37px;
     background-color: #1b1b1b;
     color: #fff;
 }
 
 .logo {
     font-size: 32px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .menu {
@@ -36,7 +37,7 @@
 }
 
 .menu li {
-    padding: 5px 14px;
+    padding: 0 14px;
 }
 
 .menu li>a {
@@ -45,8 +46,10 @@
 
 .clickableArea {
     display: flex;
-    width: 100%;
     justify-content: center;
+    z-index: 1;
+    padding: 5px 14px;
+    margin: -5px -14px;
 }
 
 
@@ -178,8 +181,7 @@
     display: block;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 32px;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    height: 92px;
     background: rgb(245, 245, 245);
 }
 
@@ -200,8 +202,7 @@
         display: block;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 32px;
-        padding-top: 3%;
-        padding-bottom: 3%;
+        height: 92px;
         background: rgb(245, 245, 245);
     }
 
@@ -281,16 +282,14 @@ li {
 
 h1 {
     font-size: 200%;
-    display: flex;
-    justify-content: center;
     padding-left: 5%;
+    padding-right: 5%;
     color: #fff;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 section {
     display: flex;
-    text-align: center;
     line-height: 150%;
     padding-left: 5%;
     padding-right: 5%;
@@ -299,11 +298,23 @@ section {
     color: #fff;
     margin-bottom: 12px;
 }
-
-.box {
+.titlebox {
     display: flex;
-    justify-content: center;
-    max-width: 960px;
-    padding-left: 10%;
-    padding-right: 10%;
+    text-align: center;
+    width: 100%;
+}
+
+.textbox {
+    display: flex;
+    text-align: justify;
+    width: 100%;
+}
+
+.titleblock {
+    margin: 3% 5% 0 5%;
+    width: 90%;
+}
+.textblock {
+    margin: 0 5% 12px 5%;
+    width: 90%;
 }
