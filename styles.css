@@ -112,10 +112,10 @@
 #hamburger-menu {
     position: fixed;
     border-radius: 8px;
-    top: 20px;
-    left: 20px;
-    width: 50px;
-    height: 50px;
+    top: 25px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
     display: none;
     border: none;
     padding: 0px;
@@ -133,7 +133,7 @@
     visibility: hidden;
     position: fixed;
     top: 0;
-    left: -250px;
+    right: -250px;
     width: 225px;
     height: 100%;
     background-color: #1b1b1b;
@@ -148,7 +148,7 @@
 }
 
 #hamburger-menu ul {
-    padding-left: 0px;
+    padding-right: 0px;
 }
 
 #hamburger-menu li {
@@ -169,7 +169,7 @@
 
 #hamburger-input:checked+#hamburger-menu #sidebar-menu {
     visibility: visible;
-    left: 0;
+    right: 0;
 }
 
 #hamburger-input:checked~.overlay {
@@ -214,7 +214,7 @@
 
     .dropdown {
         top: 30px;
-        transform: translateX(123%) translateY(-11%);
+        transform: translateX(-123%) translateY(-11%);
         background-color: #413f3f;
         padding: 2px 0;
         position: absolute;
@@ -245,7 +245,7 @@
         display: block;
     }
 
-    .clickableArea {
+    .clickableArea3 {
         display: flex;
         width: 100%;
         justify-content: center;
